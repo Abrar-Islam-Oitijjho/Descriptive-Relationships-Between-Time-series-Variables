@@ -199,21 +199,20 @@ These findings motivate formal trend testing and multivariate analysis in downst
 
 ---
 
+# Quick Start
 
-## 📊 Data and Parameters
+Clone the repository and run the main script:
 
-
-## 📁 Repository Structure
-
-```text
-.
-├── Report4_corresponding_v1(descriptive_relationships).ipynb
-├── README.md
+```bash
+git clone https://github.com/Abrar-Islam-Oitijjho/Descriptive-Relationships-Between-Time-series-Variables.git
+cd Time-Series-Covariance-Pattern-Analysis
+pip install -r requirements.txt
+jupyter notebook covariance_pattern_analysis_main(with_sub_group_resolution).ipynb
 ```
 
----
+## Installation
 
-## 🛠 Requirements
+### 🛠 Requirements
 
 The notebook is written in Python and relies on standard scientific libraries:
 
@@ -226,9 +225,22 @@ The notebook is written in Python and relies on standard scientific libraries:
 
 Exact versions can be adapted to local environments.
 
----
+## Project Structure
 
-## ▶️ Usage
+```
+Descriptive-Relationships-Between-Time-series-Variables/
+├── code/
+    ├── descriptive_relationships_part1.ipynb                 
+    └── descriptive_relationships_part2.ipynb           
+├── plots/
+    ├── Piece_wise_linear_regression        
+    ├── Boxplots
+    └── Contour_plots
+├── README.md              
+└── requirements.txt                 
+```
+
+### ▶️ Usage
 
 1. Clone the repository:
 
@@ -239,31 +251,46 @@ git clone https://github.com/your-username/your-repo-name.git
 2. Open the notebook:
 
 ```bash
-jupyter notebook Report4_corresponding_v1(descriptive_relationships).ipynb
+jupyter notebook descriptive_relationships_part1.ipynb
 ```
 
 3. Execute cells sequentially to reproduce analyses and figures.
 
 ---
 
-## 🔗 Relation to Broader Work
+## Associated Publication
 
-This repository represents a **descriptive component** of a larger research framework investigating cerebral compensatory reserve in acute neural injury. It complements:
+For more information please visit: [Relationship Between RAP and Multi-Modal Cerebral Physiological Dynamics in Moderate/Severe Acute Traumatic Neural Injury: A CAHR-TBI Multivariate Analysis](https://www.mdpi.com/2306-5354/12/9/1006)
 
-* Trend-based statistical testing (e.g., Jonckheere–Terpstra)
-* Multivariate clustering and subgroup discovery
-* Time-series and causal response modeling
-
----
-
-## 📄 Citation
+#### 📄 Citation
 
 If you use or build upon this work, please cite the associated publications on RAP and multimodal cerebral monitoring by the author.
 
 ---
 
-## 📬 Contact
+## Contributing
 
-**Abrar Islam**
-Graduate Research Assistant, University of Manitoba
-Research focus: Cerebral physiology, RAP analysis, time-series modeling, and artifact management
+Contributions are welcome!
+
+### Quick Contribution Steps
+1. 🍴 Fork the repository
+2. 🌟 Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. ✅ Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. 📤 Push to the branch (`git push origin feature/AmazingFeature`)
+5. 🔃 Open a Pull Request
+
+## Support
+
+- 📧 **Email**: abraroitijjho35@gmail.com
+- 🐛 **Issues**: [GitHub Issues](https://github.com/Abrar-Islam-Oitijjho/Descriptive-Relationships-Between-Time-series-Variables/issues)
+
+## Acknowledgments
+
+- 📚 **Libraries used**:
+  - [NumPy](https://numpy.org/) - Numerical computing library
+  - [Pandas](https://pandas.pydata.org/) - Data analysis library
+  - [Matplotlib](https://matplotlib.org/) - Visualization library
+  - [Statsmodels](https://www.statsmodels.org/stable/index.html) - Statistical modeling library
+  - [Scikit-learn](https://scikit-learn.org/stable/) - Machine learning library
+    
+🌟 Special thanks: to the Main-Hub Laboratory, University of Manitoba, for their great support.
