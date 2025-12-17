@@ -140,10 +140,62 @@ Physiological data are stratified into three RAP regimes:
 
 These findings motivate formal trend testing and multivariate analysis in downstream work.
 
-### AHC Dendrogram of Full Data (NIRS measures)
-<p align="center">
-  <img src="plots/ahc/M RAP and ICP.png" width="480">
-</p>
+### Piecewise Linear Regression
+
+#### RAP vs Different Parameters
+
+<table>
+  <tr>
+    <td><img src="plots/Piece_wise_linear_regression/M RAP and ICP.png"></td>
+    <td><img src="plots/Piece_wise_linear_regression/M RAP and PRx.png"></td>
+  </tr>
+  <tr>
+    <td align="center">RAP vs ICP</td>
+    <td align="center">RAP vs PRx</td>
+  </tr>
+</table>
+
+#### Lower Resolutions (RAP vs ICP)
+
+<table>
+  <tr>
+    <td><img src="plots/Piece_wise_linear_regression/H RAP and ICP.png"></td>
+    <td><img src="plots/Piece_wise_linear_regression/D RAP and ICP.png"></td>
+  </tr>
+  <tr>
+    <td align="center">1-hour</td>
+    <td align="center">1-day</td>
+  </tr>
+</table>
+
+### Boxplots
+
+#### RAP vs Different Parameters
+
+<table>
+  <tr>
+    <td><img src="plots/Boxplots/M RAP and ICP.png"></td>
+    <td><img src="plots/Boxplots/M RAP and PRx.png"></td>
+  </tr>
+  <tr>
+    <td align="center">RAP vs ICP</td>
+    <td align="center">RAP vs PRx</td>
+  </tr>
+</table>
+
+#### Lower Resolutions (RAP vs ICP)
+
+<table>
+  <tr>
+    <td><img src="plots/Boxplots/H RAP and ICP.png"></td>
+    <td><img src="plots/Boxplots/D RAP and ICP.png"></td>
+  </tr>
+  <tr>
+    <td align="center">1-hour</td>
+    <td align="center">1-day</td>
+  </tr>
+</table>
+
 
 ---
 
