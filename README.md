@@ -67,11 +67,7 @@ The analysis includes RAP alongside multiple intracranial pressure (ICP) and art
 
 ## Method
 
-Here is a **single combined method tree** that cleanly shows **Part 1 as the core pipeline** and **Part 2 as explicit extensions**, without duplication or confusion. This is the best version for GitHub.
-
----
-
-## Descriptive Analysis Workflow
+#### Descriptive Analysis Workflow
 
 ```text
 
@@ -119,6 +115,20 @@ Descriptive and Extended Characterization of RAP–Physiology Relationships
 
 ```
 
+#### 🧠 RAP-Based Physiological Stratification
+
+Physiological data are stratified into three RAP regimes:
+
+* **RAP < 0**
+  Preserved or optimal cerebral compensatory reserve
+
+* **0 ≤ RAP ≤ 0.4**
+  Transitional or intermediate compensatory reserve
+
+* **RAP > 0.4**
+  Impaired cerebral compensatory reserve
+
+
 
 ## Result
 
@@ -137,39 +147,8 @@ These findings motivate formal trend testing and multivariate analysis in downst
 
 ---
 
-## 🧠 RAP-Based Physiological Stratification
-
-Physiological data are stratified into three RAP regimes:
-
-* **RAP < 0**
-  Preserved or optimal cerebral compensatory reserve
-
-* **0 ≤ RAP ≤ 0.4**
-  Transitional or intermediate compensatory reserve
-
-* **RAP > 0.4**
-  Impaired cerebral compensatory reserve
-
-These regimes are treated as **ordered physiological states**, reflecting progressive impairment rather than independent categories.
-
----
 
 ## 📊 Data and Parameters
-
-The analysis includes RAP alongside multiple intracranial pressure (ICP) and arterial blood pressure (ABP)-derived variables, including but not limited to:
-
-* ICP
-* MAP
-* CPP
-* AMP
-* Cerebrovascular reactivity indices (e.g., PRx, PAx, RAC)
-* Additional multimodal parameters where available
-
-All data are assumed to be **preprocessed and artifact-managed prior to analysis**.
-
----
-
-
 
 
 ## 📁 Repository Structure
