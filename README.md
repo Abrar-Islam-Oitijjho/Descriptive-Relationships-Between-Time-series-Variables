@@ -80,7 +80,7 @@ Descriptive and Extended Characterization of RAP–Physiology Relationships
 ├── 2. RAP-Based Stratification
 │   ├── Segment data into ordered compensatory reserve states:
 │   │     • RAP < 0 (preserved reserve)
-│   │     • 0 ≤ RAP ≤ 0.4 (transitional reserve)
+│   │     • 0 ≤ RAP ≤ 0.4 (intact or transitional reserve)
 │   │     • RAP > 0.4 (impaired reserve)
 │
 ├── 3. Core Descriptive Analysis (Part 1)
@@ -93,25 +93,21 @@ Descriptive and Extended Characterization of RAP–Physiology Relationships
 │   ├── Report sample sizes per RAP state
 │   └── Establish baseline RAP-dependent physiological trends
 │
-├── 4. Core Comparative Visualization (Part 1)
+├── 4. Core Comparative Visualization
 │   ├── Generate comparative distribution plots across RAP states
-│   ├── Identify directional shifts and changes in variability
 │   └── Produce figures for core variables
 │
-├── 5. Extended Variable Analysis (Part 2)
-│   ├── Incorporate additional intracranial and cerebrovascular parameters
-│   ├── Maintain consistent preprocessing and RAP stratification
-│   └── Expand multimodal physiological coverage
+├── 6. Statistical Comparison Across RAP States
+│ ├── Apply non-parametric group comparison tests
+│ │       • Across RAP-defined states
+  │       • Across other parameter thresholds
+│ ├── Assess statistical significance of distributional differences
+│ └── Report p-values for physiological parameters
 │
-├── 6. Extended Descriptive and Comparative Analysis (Part 2)
-│   ├── Recompute descriptive statistics for extended variable set
-│   ├── Perform refined distributional comparisons across RAP states
-│   └── Identify parameter-specific deviations or amplifications
-│
-├── 7. Extended Visualization Suite (Part 2)
-│   ├── Generate additional comparative plots for extended variables
-│   ├── Enable cross-variable visual assessment of RAP effects
-│   └── Improve resolution of RAP-dependent physiological behavior
+├── 5. Temporal Burden Analysis (Part 2)
+│ └── Compute percentage of monitoring time spent:
+│ │     • Within each RAP state
+│ │     • Within other parameter thresholds (reverse %time spent)
 
 ```
 
@@ -196,6 +192,47 @@ These findings motivate formal trend testing and multivariate analysis in downst
   </tr>
 </table>
 
+---
+
+### Median physiology measures across the RAP states with formal comparison 
+
+| Parameter        | RAP < 0 (IQR)           | 0 ≤ RAP ≤ 0.4 (IQR)     | RAP > 0.4 (IQR)          | p-value  |
+| ---------------- | ----------------------- | ----------------------- | ------------------------ | -------- |
+| RAP              | -0.234 (-0.458 – -0.10) | 0.239 (0.134 – 0.326)   | 0.873 (0.722 – 0.949)    | 3.05e-19 |
+| ICP              | 12.03 (7.70 – 17.30)    | 12.06 (7.89 – 16.75)    | 13.71 (9.70 – 18.14)     | 0.021    |
+| AMP              | 0.913 (0.362 – 1.822)   | 1.081 (0.506 – 2.119)   | 1.93 (1.174 – 3.052)     | 3.94e-09 |
+| MAP              | 90.06 (79.64 – 100.10)  | 89.66 (80.11 – 98.90)   | 89.46 (81.44 – 97.85)    | 0.008    |
+| CPP              | 76.69 (66.38 – 87.20)   | 76.63 (67.04 – 86.90)   | 75.07 (67.58 – 83.53)    | 0.638    |
+| PRx              | 0.271 (-0.078 – 0.638)  | 0.233 (-0.064 – 0.548)  | 0.047 (-0.238 – 0.360)   | 0.035    |
+| PAx              | -0.147 (-0.423 – 0.107) | -0.015 (-0.250 – 0.200) | -0.030 (-0.314 – 0.272)  | 0.184    |
+| RAC              | -0.060 (-0.364 – 0.214) | -0.103 (-0.336 – 0.126) | -0.485 (-0.739 – -0.131) | 1.00e-04 |
+| rSO₂_L           | 69.29 (62.67 – 76.49)   | 69.03 (62.54 – 76.39)   | 68.02 (62.08 – 74.94)    | 0.093    |
+| rSO₂_R           | 71.01 (64.33 – 78.32)   | 71.96 (64.53 – 78.16)   | 71.29 (64.57 – 77.71)    | 0.152    |
+| COx_L            | 0.076 (-0.172 – 0.350)  | 0.058 (-0.159 – 0.298)  | 0.009 (-0.215 – 0.234)   | 0.170    |
+| COx_R            | 0.085 (-0.166 – 0.352)  | 0.066 (-0.150 – 0.301)  | 0.013 (-0.206 – 0.233)   | 0.508    |
+| COxA_L           | 0.115 (-0.140 – 0.402)  | 0.085 (-0.140 – 0.323)  | 0.065 (-0.150 – 0.280)   | 0.669    |
+| COxA_R           | 0.110 (-0.141 – 0.395)  | 0.084 (-0.138 – 0.320)  | 0.059 (-0.146 – 0.268)   | 0.827    |
+| PbtO<sub>2</sub> | 24.00 (17.31 – 30.56)   | 21.66 (15.01 – 29.00)   | 24.67 (17.24 – 32.00)    | 0.819    |
+
+---
+
+### % time spent within the thresholds of the parameters (Example: ICP) across the RAP states
+
+#### ICP Threshold: 20 mmHg
+
+| RAP State     | ICP < 20                 | ICP ≥ 20               |
+| ------------- | ------------------------ | ---------------------- |
+| RAP < 0       | 91.29% (75.06% – 99.03%) | 8.71% (0.97% – 24.94%) |
+| 0 ≤ RAP ≤ 0.4 | 94.11% (79.50% – 99.14%) | 5.89% (0.86% – 20.50%) |
+| RAP > 0.4     | 95.07% (80.42% – 99.38%) | 4.93% (0.62% – 19.58%) |
+
+#### ICP Threshold: 22 mmHg
+
+| RAP State     | ICP < 22                  | ICP ≥ 22               |
+| ------------- | ------------------------- | ---------------------- |
+| RAP < 0       | 95.50% (84.62% – 100.00%) | 4.50% (0.00% – 15.38%) |
+| 0 ≤ RAP ≤ 0.4 | 96.98% (89.06% – 99.69%)  | 3.02% (0.31% – 10.94%) |
+| RAP > 0.4     | 97.92% (89.57% – 99.80%)  | 2.08% (0.20% – 10.43%) |
 
 ---
 
@@ -230,8 +267,8 @@ Exact versions can be adapted to local environments.
 ```
 Descriptive-Relationships-Between-Time-series-Variables/
 ├── code/
-    ├── descriptive_relationships_part1.ipynb                 
-    └── descriptive_relationships_part2.ipynb           
+    ├── descriptive_relationships_part1.ipynb       # core variables, basic descriptive analysis          
+    └── descriptive_relationships_part2.ipynb       # extended variables, advancced descriptive analysis     
 ├── plots/
     ├── Piece_wise_linear_regression        
     ├── Boxplots
