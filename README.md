@@ -301,7 +301,7 @@ For more information please visit: [Relationship Between RAP and Multi-Modal Cer
 
 #### 📄 Citation
 
-If you use or build upon this work, please cite the associated publications on RAP and multimodal cerebral monitoring by the author.
+If you use or build upon this work, please cite the associated publications.
 
 ---
 
