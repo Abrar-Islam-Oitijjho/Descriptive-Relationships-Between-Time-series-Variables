@@ -225,7 +225,7 @@ CPP thresholds: 60, 70 mmHg, PRx thresholds: 0, 0.25, 0.35
 Corresponding table [% time spent within the thresholds of the parameters](tables/time_spent_within_threholds.pdf)<br>
 
 
-## Interactive Visualizations
+## Interactive Visualization
 
 Interactive versions of the figures are available for exploratory analysis:
 
