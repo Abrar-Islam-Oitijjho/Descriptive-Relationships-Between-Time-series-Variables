@@ -208,7 +208,7 @@ Corresponding table [Median Physiology Across RAP States](tables/median_physiolo
 
 ### % time spent within the thresholds of the parameters (Example: CPP, PRx) across the RAP states
 
-CPP threshold: 60, 70 mmHg, PRx threshold: 0, 0.25, 0.35
+CPP thresholds: 60, 70 mmHg, PRx thresholds: 0, 0.25, 0.35
 
 <table>
   <tr>
@@ -222,6 +222,18 @@ CPP threshold: 60, 70 mmHg, PRx threshold: 0, 0.25, 0.35
 </table>
 
 Corresponding table [% time spent within the thresholds of the parameters](tables/time_spent_within_threholds.pdf)<br>
+
+
+## Interactive Visualizations
+
+Interactive versions of the figures are available for exploratory analysis:
+
+- [Median heatmap (interactive)](plots/Interactive_plots/heatmap_medians_by_RAP.html)
+- [Statistical significance plot (interactive)](plots/Interactive_plots/significance_minuslog10p.html)
+- [ICP threshold burden (interactive)](plots/Interactive_plots/burden_icp_exceedance.html)
+- [CPP threshold burden (interactive)](plots/Interactive_plots/burden_cpp_low.html)
+- [PRx burden (interactive)](plots/Interactive_plots/burden_prx_exceedance.html)
+- [PbtO₂ threshold burden (interactive)](plots/Interactive_plots/burden_pbto2_low.html)
 
 ---
 
@@ -248,6 +260,7 @@ The notebook is written in Python and relies on standard scientific libraries:
 * SciPy
 * Matplotlib
 * Seaborn
+* Plotly
 
 Exact versions can be adapted to local environments.
 
