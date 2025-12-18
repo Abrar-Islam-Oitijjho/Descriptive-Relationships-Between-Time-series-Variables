@@ -37,9 +37,9 @@ A quantitative, visually characterized analysis of physiological trends across E
 
 This repository presents a descriptive analysis of the relationships between the time series signals, Compensatory Reserve Index (RAP) and multiple intracranial and cerebrovascular physiological parameters derived from multimodal neuromonitoring data. The analysis focuses on characterizing how physiological variables behave across distinct RAP-defined states of cerebral compensatory reserve.
 
-Physiological data are stratified into ordered RAP regimes representing preserved, transitional, and impaired compensatory reserve. Descriptive statistics and comparative visualizations are used to examine shifts in central tendency, dispersion, and distributional behavior across these regimes, providing insight into how cerebral dynamics evolve with worsening compensatory capacity.
+Physiological data are stratified into ordered RAP regimes representing preserved, transitional, and impaired compensatory reserve. Descriptive statistics and comparative visualizations are used to examine shifts in central tendency, dispersion, and distributional behavior across these regimes, providing insight into how cerebral dynamics evolve with worsening compensatory capacity. Results are summarized through multivariate visualizations, including median heatmaps, statistical significance rankings, and distribution-aware burden plots, enabling systematic comparison of central tendency, variability, and clinically meaningful exposure across RAP states. Both static and interactive visualizations are provided to support exploratory analysis.
 
-The analysis is implemented in a Jupyter Notebook environment using standard scientific Python libraries, including NumPy, Pandas, SciPy, and Matplotlib. This work is intended as a descriptive and exploratory foundation for downstream statistical testing, multivariate analysis, and time-series modeling of cerebral physiological dynamics.
+The analysis is implemented in a Jupyter Notebook environment using standard scientific Python libraries, including NumPy, Pandas, SciPy, Matplotlib, Seaborn and Plotly. This work is intended as a descriptive and exploratory foundation for downstream statistical testing, multivariate analysis, and time-series modeling of cerebral physiological dynamics.
 
 ## Features
 
