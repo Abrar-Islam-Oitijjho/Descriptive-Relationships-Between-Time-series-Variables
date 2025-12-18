@@ -1,6 +1,6 @@
 # Descriptive Relationships Between Time-series Variables
 
-A quantitative, visually characterized analysis of physiological trends across EEG time-series variables.
+A quantitative and visually characterized analysis of physiological trends across EEG time-series variables.
 
 ![GitHub stars](https://img.shields.io/github/stars/Abrar-Islam-Oitijjho/Descriptive-Relationships-Between-Time-series-Variables?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Abrar-Islam-Oitijjho/Descriptive-Relationships-Between-Time-series-Variables?style=social)
