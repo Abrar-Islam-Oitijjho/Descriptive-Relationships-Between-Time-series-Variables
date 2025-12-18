@@ -24,6 +24,7 @@ A quantitative, visually characterized analysis of physiological trends across E
 - [Data](#data)
 - [Method](#method)
 - [Result](#result)
+- [Interactive Visualization](#interactive-visualization)
 - [Quick Start](#quick-start)
 - [Installation](#installation)
 - [Project Structure](#project-structure)
@@ -228,12 +229,12 @@ Corresponding table [% time spent within the thresholds of the parameters](table
 
 Interactive versions of the figures are available for exploratory analysis:
 
-- [Median heatmap (interactive)](plots/Interactive_plots/heatmap_medians_by_RAP.html)
-- [Statistical significance plot (interactive)](plots/Interactive_plots/significance_minuslog10p.html)
-- [ICP threshold burden (interactive)](plots/Interactive_plots/burden_icp_exceedance.html)
-- [CPP threshold burden (interactive)](plots/Interactive_plots/burden_cpp_low.html)
-- [PRx burden (interactive)](plots/Interactive_plots/burden_prx_exceedance.html)
-- [PbtO₂ threshold burden (interactive)](plots/Interactive_plots/burden_pbto2_low.html)
+- [Median heatmap (interactive)](https://abrar-islam-oitijjho.github.io/Descriptive-Relationships-Between-Time-series-Variables/interactive/heatmap_medians_by_RAP.html)
+- [Statistical significance plot (interactive)](https://abrar-islam-oitijjho.github.io/Descriptive-Relationships-Between-Time-series-Variables/interactive/significance_minuslog10p.html)
+- [ICP threshold burden (interactive)](https://abrar-islam-oitijjho.github.io/Descriptive-Relationships-Between-Time-series-Variables/interactive/burden_icp_exceedance.html)
+- [CPP threshold burden (interactive)](https://abrar-islam-oitijjho.github.io/Descriptive-Relationships-Between-Time-series-Variables/interactive/burden_cpp_low.html)
+- [PRx burden (interactive)](https://abrar-islam-oitijjho.github.io/Descriptive-Relationships-Between-Time-series-Variables/interactive/burden_prx_exceedance.html)
+- [PbtO₂ threshold burden (interactive)](https://abrar-islam-oitijjho.github.io/Descriptive-Relationships-Between-Time-series-Variables/interactive/burden_pbto2_low.html)
 
 ---
 
