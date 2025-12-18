@@ -41,14 +41,16 @@ Physiological data are stratified into ordered RAP regimes representing preserve
 
 The analysis is implemented in a Jupyter Notebook environment using standard scientific Python libraries, including NumPy, Pandas, SciPy, Matplotlib, Seaborn and Plotly. This work is intended as a descriptive and exploratory foundation for downstream statistical testing, multivariate analysis, and time-series modeling of cerebral physiological dynamics.
 
+
 ## Features
 
-* 📊 **RAP-Based Stratification**: Segments physiological data into ordered compensatory reserve states using RAP thresholds.
-* 📈 **Descriptive Statistical Analysis**: Computes central tendency and dispersion metrics across RAP regimes for multiple physiological variables.
-* 🔍 **Comparative Distribution Analysis**: Examines shifts in distributions and variability as cerebral compensatory reserve deteriorates.
-* 🧠 **Multimodal Physiological Integration**: Analyzes RAP alongside intracranial and cerebrovascular parameters derived from multimodal neuromonitoring.
-* 🎨 **Clear Visualizations**: Generates clear comparative plots for physiological interpretation and reporting.
-* 🧩 **Extensible Analytical Framework**: Designed to support downstream trend testing, multivariate analysis, and time-series modeling.
+* 📊 **RAP-Based Stratification**: Segments physiological time-series data into ordered compensatory reserve states (preserved, transitional, impaired) using RAP thresholds.
+* 📈 **Robust Descriptive Statistics**: Computes median, IQR, and dispersion metrics across RAP regimes for multiple intracranial and cerebrovascular variables.
+* 🔬 **Formal Group Comparisons**: Quantifies statistical differences across RAP states and summarizes significance using comparative metrics.
+* ⏱️ **Threshold-Based Temporal Burden Analysis**: Calculates percentage of monitoring time above or below clinically relevant ICP, CPP, and PRx thresholds.
+* 🧠 **Multimodal Physiological Integration**: Integrates RAP with intracranial pressure, perfusion, autoregulation, and oxygenation parameters from multimodal neuromonitoring.
+* 🎨 **Static & Interactive Visualizations**: Provides publication-ready figures and interactive dashboards for exploratory and comparative analysis.
+* 🧩 **Extensible Analysis Pipeline**: Structured to support downstream hypothesis testing, multivariate analysis, and time-series modeling.
 
 
 ## Data
@@ -271,13 +273,15 @@ Exact versions can be adapted to local environments.
 Descriptive-Relationships-Between-Time-series-Variables/
 ├── code/
     ├── descriptive_relationships_part1.ipynb       # core variables, basic descriptive analysis          
-    └── descriptive_relationships_part2.ipynb       # extended variables, advanced descriptive analysis     
+    └── descriptive_relationships_part2.ipynb       # extended variables, advanced descriptive analysis
 ├── plots/
     ├── Boxplots/        
     ├── Contour_plots/
     ├── Piece_wise_linear_regression/
     └── Stat_plots/
-├── tables/     
+├── tables/
+    ├── median_physiology_RAP_states.csv            # Median, IQR, and p-value summaries across RAP states
+│   └── time_spent_within_threholds.csv             # Percentage time above/below/within clinical thresholds    
 ├── README.md              
 └── requirements.txt                 
 ```
