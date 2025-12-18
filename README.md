@@ -195,30 +195,33 @@ These findings motivate formal trend testing and multivariate analysis in downst
 ---
 
 ### Median physiology measures across the RAP states with formal comparison 
-
 This heatmap summarizes median values of physiological parameters across RAP-defined states.
 
 <img src="plots/Stat_plots/heatmap_medians_by_RAP.png">
 
-Corresponding table [ADF Test Original](csv/median_physiology_RAP_states.csv)<br>
+### Statistical significance across RAP states
+Bars represent −log₁₀(p-values) from non-parametric group comparisons across RAP states.
 
-### % time spent within the thresholds of the parameters (Example: ICP) across the RAP states
+<img src="plots/Stat_plots/significance_minuslog10p.png">
 
-#### ICP Threshold: 20 mmHg
+Corresponding table [Median Physiology Across RAP States](tables/median_physiology_RAP_states.csv)<br>
 
-| RAP State     | ICP < 20                 | ICP ≥ 20               |
-| ------------- | ------------------------ | ---------------------- |
-| RAP < 0       | 91.29% (75.06% – 99.03%) | 8.71% (0.97% – 24.94%) |
-| 0 ≤ RAP ≤ 0.4 | 94.11% (79.50% – 99.14%) | 5.89% (0.86% – 20.50%) |
-| RAP > 0.4     | 95.07% (80.42% – 99.38%) | 4.93% (0.62% – 19.58%) |
+### % time spent within the thresholds of the parameters (Example: CPP, PRx) across the RAP states
 
-#### ICP Threshold: 22 mmHg
+CPP threshold: 60, 70 mmHg, PRx threshold: 0, 0.25, 0.35
 
-| RAP State     | ICP < 22                  | ICP ≥ 22               |
-| ------------- | ------------------------- | ---------------------- |
-| RAP < 0       | 95.50% (84.62% – 100.00%) | 4.50% (0.00% – 15.38%) |
-| 0 ≤ RAP ≤ 0.4 | 96.98% (89.06% – 99.69%)  | 3.02% (0.31% – 10.94%) |
-| RAP > 0.4     | 97.92% (89.57% – 99.80%)  | 2.08% (0.20% – 10.43%) |
+<table>
+  <tr>
+    <td><img src="plots/Stat_plots/burden_cpp_low.png"></td>
+    <td><img src="plots/Stat_plots/burden_prx_exceedance.png"></td>
+  </tr>
+  <tr>
+    <td align="center">CPP</td>
+    <td align="center">PRx</td>
+  </tr>
+</table>
+
+Corresponding table [% time spent within the thresholds of the parameters](tables/time_spent_within_threholds.pdf)<br>
 
 ---
 
@@ -228,9 +231,9 @@ Clone the repository and run the main script:
 
 ```bash
 git clone https://github.com/Abrar-Islam-Oitijjho/Descriptive-Relationships-Between-Time-series-Variables.git
-cd Time-Series-Covariance-Pattern-Analysis
+cd Descriptive-Relationships-Between-Time-series-Variables
 pip install -r requirements.txt
-jupyter notebook covariance_pattern_analysis_main(with_sub_group_resolution).ipynb
+jupyter notebook descriptive_relationships_part2.ipynb
 ```
 
 ## Installation
@@ -254,11 +257,13 @@ Exact versions can be adapted to local environments.
 Descriptive-Relationships-Between-Time-series-Variables/
 ├── code/
     ├── descriptive_relationships_part1.ipynb       # core variables, basic descriptive analysis          
-    └── descriptive_relationships_part2.ipynb       # extended variables, advancced descriptive analysis     
+    └── descriptive_relationships_part2.ipynb       # extended variables, advanced descriptive analysis     
 ├── plots/
-    ├── Piece_wise_linear_regression        
-    ├── Boxplots
-    └── Contour_plots
+    ├── Boxplots/        
+    ├── Contour_plots/
+    ├── Piece_wise_linear_regression/
+    └── Stat_plots/
+├── tables/     
 ├── README.md              
 └── requirements.txt                 
 ```
